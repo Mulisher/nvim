@@ -1,1 +1,1 @@
-## NeoVim Config Repo
+## NeoVim Config
