@@ -18,7 +18,10 @@ return require('packer').startup(function(use)
     use {"mbbill/undotree"}
 
 
+    --Code highlight and contex show
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter-context')
+
     --LSP, autocomplete etc.
     use { 'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -31,7 +34,9 @@ return require('packer').startup(function(use)
           {'neovim/nvim-lspconfig'},
           -- Autocompletion
           {'hrsh7th/nvim-cmp'},
+          {'windwp/nvim-autopairs'},
           {'hrsh7th/cmp-nvim-lsp'},
+          {'hrsh7th/cmp-nvim-lsp-signature-help'},
           {'L3MON4D3/LuaSnip'},
         }
     }
