@@ -1,3 +1,4 @@
+vim.loader.enable()
 require("mulisher.remap")
 require("mulisher.packer")
 require("mulisher.set")

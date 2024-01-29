@@ -45,8 +45,11 @@ return require('packer').startup(function(use)
 
     --Look and Feel
     use {"ellisonleao/gruvbox.nvim"}
-    use {"vim-airline/vim-airline"}
-    use {"vim-airline/vim-airline-themes"}
+    --use {"vim-airline/vim-airline"}
+    --use {"vim-airline/vim-airline-themes"}
+    use {'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
     use {'norcalli/nvim-colorizer.lua'}
     use {'lukas-reineke/indent-blankline.nvim'}
     use {"HiPhish/nvim-ts-rainbow2"}
