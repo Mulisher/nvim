@@ -23,13 +23,13 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
-function SetColorScheme(color)
-	color = color or "gruvbox"
-	vim.cmd.colorscheme (color)
 
-	vim.o.background = "dark" -- or "light" for light mode
-	--vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	--vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+function SetColorScheme(color, type)
+	color = color or "desert"
+	vim.cmd.colorscheme (color)
+	vim.o.background = type
 end
 
-SetColorScheme()
+-- "gruvbox" "gruvebox-baby" "gruvbox-material"
+SetColorScheme("gruvbox-material", "dark")

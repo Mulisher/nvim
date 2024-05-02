@@ -17,6 +17,13 @@ return require('packer').startup(function(use)
     --Undo
     use {"mbbill/undotree"}
 
+    --Comment
+    use { 'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    }
+
 
     --Code highlight and contex show
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -45,8 +52,8 @@ return require('packer').startup(function(use)
 
     --Look and Feel
     use {"ellisonleao/gruvbox.nvim"}
-    --use {"vim-airline/vim-airline"}
-    --use {"vim-airline/vim-airline-themes"}
+    use {'luisiacc/gruvbox-baby', branch = 'main'}
+    use {'sainnhe/gruvbox-material'}
     use {'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
