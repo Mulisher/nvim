@@ -27,9 +27,11 @@ return require('packer').startup(function(use)
 
     --Code highlight and contex show
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    use('nvim-treesitter/nvim-treesitter-context')
+    use{'nvim-treesitter/nvim-treesitter-context'}
 
     --LSP, autocomplete etc.
+    use{'williamboman/mason.nvim'}
+    use{'williamboman/mason-lspconfig.nvim'}
     use { 'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
@@ -49,6 +51,9 @@ return require('packer').startup(function(use)
     }
     --GIT
     use {"tpope/vim-fugitive"}
+
+    --Clipboard managment
+    --use {"EtiamNullam/deferred-clipboard.nvim"}
 
     --Look and Feel
     use {"ellisonleao/gruvbox.nvim"}

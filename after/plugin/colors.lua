@@ -29,6 +29,8 @@ function SetColorScheme(color, type)
 	color = color or "desert"
 	vim.cmd.colorscheme (color)
 	vim.o.background = type
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 -- "gruvbox" "gruvebox-baby" "gruvbox-material"

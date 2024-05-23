@@ -28,3 +28,6 @@ vim.opt.colorcolumn = "80"
 vim.opt.cursorline = false
 
 vim.opt.guicursor = "n-v-c:block-Cursor/lCursor"
+--vim.opt.guicursor = "i-ci:block-iCursor-blinkwait:300-blinkon200-blinkoff150"
+
+--vim.api.nvim_set_option("clipboard","unnamed")

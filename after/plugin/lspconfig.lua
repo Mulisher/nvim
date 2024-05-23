@@ -1,5 +1,6 @@
 local lspconfig = require('lspconfig')
 
+lspconfig.htmx.setup{}
 lspconfig.lua_ls.setup {
   settings = {
     Lua = {
