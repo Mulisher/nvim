@@ -64,6 +64,6 @@ return require('packer').startup(function(use)
     }
     use {'norcalli/nvim-colorizer.lua'}
     use {'lukas-reineke/indent-blankline.nvim'}
-    use {"HiPhish/nvim-ts-rainbow2"}
+    use {"HiPhish/rainbow-delimiters.nvim"}
 
     end)

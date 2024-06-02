@@ -1,4 +1,17 @@
 local lspconfig = require('lspconfig')
+local MY_FQBN = "arduino:avr:uno" --Arduino
+
+lspconfig.arduino_language_server.setup {
+    cmd = {
+        "arduino-language-server",
+        "-cli-config", "~/.arduino15/arduino-cli.yaml",
+        "-clangd", "/usr/bin/clangd",
+        '-cli', '/usr/bin/arduino-cli',
+        "-fqbn", MY_FQBN
+    },
+    --on_attach = on_attach,
+    capabilities = capabilities,
+}
 
 lspconfig.htmx.setup{}
 lspconfig.lua_ls.setup {
@@ -27,3 +40,4 @@ lspconfig.lua_ls.setup {
     },
   },
 }
+
