@@ -12,7 +12,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "~/.vim/.undodir"
+vim.opt.undodir = "/home/tm/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
@@ -27,7 +27,4 @@ vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = false
 
-vim.opt.guicursor = "n-v-c:block-Cursor/lCursor"
---vim.opt.guicursor = "i-ci:block-iCursor-blinkwait:300-blinkon200-blinkoff150"
-
---vim.api.nvim_set_option("clipboard","unnamed")
+-- vim.opt.guicursor = "n-v-c:block-Cursor/lCursor"
